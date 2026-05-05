@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/pico.min.css" />
+    <link rel="stylesheet" href="css/additional.css" />
+    <title>IVCNZ 2026</title>
+
+    <script>
+        async function loadContent(sourceFile, targetElementId) {
+            try {
+                const response = await fetch(sourceFile);
+                if (!response.ok) {
+                    throw new Error(`Could not load content from ${sourceFile}: ${response.statusText}`);
+                }
+                const content = await response.text();
+                document.getElementById(targetElementId).innerHTML = content;
+            } catch (error) {
+                console.error(error);
+                document.getElementById(targetElementId).innerHTML = `<p>Error loading content: ${error.message}</p>`;
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadContent('test.html', 'testID');
+        });
+    </script>
+</head>
+<body>
+
+    <header class="container">
+        <img width="100%" src="images/ivcnz2026Banner.png" alt="IVCNZ 2026" />
+    </header>
+
+    <article id="testID"></article>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cfp.html">Call for Papers</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+
+        <section>
+            <div class="grid-custom" style="grid-template-columns: 2fr 1fr;">
+                <article>
+                    <h3>Events</h3>
+                    <p>
+                        There are many other events and conferences on around the same time as IVCNZ. 
+                    </p>
+
+                    <h3>AIRA Conference 2026</h3>
+                    <p>
+                        The 5th annual Artificial Intelligence Researchers' Association Conference (AIRAC) is co-located with IVCNZ on the 23-24th of November.
+                        Make the most of your trip to Ōtepoti | Dunedin, enjoy the local hospitality over the weekend, and stay on for AIRAC after IVNCZ.
+                    </p>
+                </article>
+                <article>
+                    <h3>Important Dates</h3>
+                    <table>
+                        <tr>
+                            <th>Submission</th>
+                            <td>7 Sep 2026</td>
+                        </tr>
+                        <tr>
+                            <th>Notification</th>
+                            <td>6 Oct 2026</td>
+                        </tr>
+                        <tr>
+                            <th>Camera-Ready</th>
+                            <td>18 Oct 2026</td>
+                        </tr>
+                        <tr>
+                            <th>Conference</th>
+                            <td>18-20 Nov 2026</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+            <div class="grid-custom" style="grid-template-columns: 1fr 2fr;">
+            <article>
+                <img src="images/conferenceLocations.png" width="100%"alt="Conference Locations" />
+            </article>
+                <article>
+                <h3>Other Conferences in the Region</h3>
+
+                <p>
+                    There are a lot of other conferences related to Visual Computing in the region around the same time as IVCNZ.
+                    If you are planning to attend IVCNZ, you may want to consider attending some of these other conferences as well.
+
+                    <h4>Conferences in Aotearoa | New Zealand</h4>
+                    <ul>
+                        <li><a href="https://ajcai26.org/">AJCAI - Australasian Joint Conference on AI</a>, Auckland 26-30 November 2026</li>
+                    </ul>
+
+                    <h4>Conferences in Australia</h4>
+                    <ul>
+                        <li><a href="https://www.acml-conf.org/2026/">ACML - Asian Conference on Machine Learning</a>, Melbourne 1-4 December 2026</li>
+                        <li><a href="https://dicta2026.dictaconference.org/">DICTA - Digtial Image Computing: Techniques and Applications</a>, Sydney 2-4 December 2026</li>
+                        <li><a href="https://neurips.cc/">NeurIPS - Neural Information Processing Systems</a>, Sydney 6-12 December 2026</li>
+                    </ul>
+                 </p>
+             </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container">
+        Contact: <a href="mailto:ivcnzconference@gmail.com">ivcnzconference@gmail.com</a>
+    </footer>
+
+</body>
+</html>
