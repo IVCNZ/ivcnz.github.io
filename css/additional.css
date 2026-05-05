@@ -1,0 +1,32 @@
+/* Default state (Mobile: Stacking) */
+.grid-custom {
+    display: flex;
+    flex-direction: column;
+}
+
+nav, nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+    nav, nav ul li {
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+    }
+
+/* Desktop state (Above 768px) */
+@media (min-width: 768px) {
+    .grid-custom {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* 25% - 75% ratio */
+        gap: 1rem; /* Adjust as needed */
+    }
+
+    nav, nav ul {
+        flex-direction: row;
+        gap: 1rem; /* Adjust as needed */
+    }
+
+}
+
