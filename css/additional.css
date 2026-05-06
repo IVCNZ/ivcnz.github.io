@@ -15,6 +15,8 @@ nav, nav ul {
         padding: 0; /* Remove default padding */
     }
 
+.two-columns {}
+
 /* Desktop state (Above 768px) */
 @media (min-width: 768px) {
     .grid-custom {
@@ -28,5 +30,10 @@ nav, nav ul {
         gap: 1rem; /* Adjust as needed */
     }
 
+    .two-columns {
+        column-count: 2;
+        column-gap: 1ex;
+        list-style-position: inside;
+    }
 }
 
