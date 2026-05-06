@@ -11,20 +11,11 @@
 <body>
 
     <header class="container">
-        <img width="100%" src="images/ivcnz2026Banner.png" alt="IVCNZ 2026"/>
+        <img width="100%" src="images/ivcnz2026Banner.png" alt="IVCNZ 2026" />
     </header>
 
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cfp.html">Call for Papers</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="registration.html">Registration</a></li>
-                <li><a href="venue.html">Venue</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </nav>
+    <div class="container" id="navID">
+        <!-- nav.html gets loaded here -->
     </div>
 
     <main class="container">
@@ -34,39 +25,23 @@
                 <article>
                     <h3>Call for Papers</h3>
                     <p>
-                        Coming Soon                    
+                        Coming Soon
                     </p>
                 </article>
-                <article>
-                    <h3>Important Dates</h3>
-                    <table>
-                        <tr>
-                            <th>Submission</th>
-                            <td>7 Sep 2026</td>
-                        </tr>
-                        <tr>
-                            <th>Notification</th>
-                            <td>6 Oct 2026</td>
-                        </tr>
-                        <tr>
-                            <th>Camera-Ready</th>
-                            <td>18 Oct 2026</td>
-                        </tr>
-                        <tr>
-                            <th>Conference</th>
-                            <td>18-20 Nov 2026</td>
-                        </tr>
-                    </table>
+                <article id="datesID">
+                    <!-- dates.html gets loaded here -->
                 </article>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="container">
-        Contact: <a href="mailto:ivcnzconference@gmail.com">ivcnzconference@gmail.com</a>
+    <footer class="container" id="footerID">
+        <!-- footer.html gets loaded here -->
     </footer>
+
+    <script src="js/commonContentLoader.js"></script>
+
 
 </body>
 </html>
