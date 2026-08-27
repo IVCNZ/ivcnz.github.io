@@ -15,6 +15,10 @@ nav, nav ul {
         padding: 0; /* Remove default padding */
     }
 
+th {
+    font-weight: bold;
+}
+
 .two-columns {}
 
 /* Desktop state (Above 768px) */
