@@ -21,6 +21,10 @@ th {
 
 .two-columns {}
 
+.box {
+    border:1px, solid, black;
+}
+
 /* Desktop state (Above 768px) */
 @media (min-width: 768px) {
     .grid-custom {
