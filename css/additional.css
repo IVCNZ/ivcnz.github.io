@@ -22,7 +22,8 @@ th {
 .two-columns {}
 
 .box {
-    border:1px, solid, black;
+    border: 1px solid black;
+    border-collapse: separate;
 }
 
 /* Desktop state (Above 768px) */
